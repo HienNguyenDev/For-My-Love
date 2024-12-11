@@ -3,24 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lời Mời Kỷ Niệm</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Kế Hoạch Du Lịch Đà Lạt</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Styles -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffe9e9, #ffffff);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff7eb3, #ff758c);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 10%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .day-plan {
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .day-plan:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .day-plan h2 {
+            color: #ff758c;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ff758c;
+            display: inline-block;
+        }
+
+        /* Improved Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        table th {
+            background: #ff758c;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        table td {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        table tr:nth-child(even) td {
+            background: #f4f4f4;
+        }
+
+        table tr:hover td {
+            background: #ffe9e9;
+        }
+
+        table th, table td {
+            border-bottom: 2px solid #f1f1f1;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p:last-child {
+            font-weight: bold;
+        }
+
+        /* Button Style */
+        button {
+            background: #ff758c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff7eb3;
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="envelope" id="envelope">
-            <div class="flap"></div>
-            <div class="letter">
-                <h1>OPEN ME</h1>
-            </div>
-        </div>
-        <div class="overlay" id="overlay"></div>
-        <div class="invitation" id="invitation">
-            <img src="date.png" alt="Hình Ảnh Thiệp Mời" class="invitation-image">
-            <button class="close-button" id="closeButton">&times;</button>
-        </div>
-        <div class="overlay" id="overlay"></div>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <h1>Kế Hoạch Du Lịch Đà Lạt Của Chúng Mình</h1>
+        <p>16/12 - 19/12</p>
+    </header>
+    <main>
+        <!-- Ngày 1 -->
+        <section class="day-plan">
+            <h2>Ngày 1 (17/12)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thời Gian</th>
+                        <th>Nội Dung</th>
+                        <th>Địa Chỉ</th>
+                        <th>Chi Phí (VNĐ)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12h00</td>
+                        <td>Đi xe khách từ TP.HCM</td>
+                        <td>Lotte Quận 7</td>
+                        <td>650K</td>
+                    </tr>
+                    <tr>
+                        <td>8h00</td>
+                        <td>Uống cafe AI Matcha</td>
+                        <td>18/2 Khởi Nghĩa Bắc Sơn, P10</td>
+                        <td>50-100K</td>
+                    </tr>
+                    <tr>
+                        <td>9h30</td>
+                        <td>Checkin nhà thờ Domaine de Marie</td>
+                        <td>1 Ngô Quyền, P6</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>12h00</td>
+                        <td>Ăn trưa lẩu gà lá é </td>
+                        <td>137 Bùi Thị Xuân, P2</td>
+                        <td>100-200k</td>
+                    </tr>
+                    <tr>
+                        <td>14h00</td>
+                        <td>Nhận phòng và nghỉ ngơi</td>
+                        <td>Chiu Homestay</td>
+                        <td>1500k</td>
+
+                    </tr>
+                    <tr>
+                        <td>16h00</td>
+                        <td>Dạo Hồ Xuân Hương và Quảng trường Lâm Viên</td>
+                        <td>Công viên Hồ Xuân Hương</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>17h00</td>
+                        <td>Ngắm hoàng hôn </td>
+                        <td>Dốc Sương Nguyệt Ánh</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>18h00</td>
+                        <td>Ăn uống và đi dạo ở chợ Đà Lạt</td>
+                        <td>Chợ đêm Đà Lạt</td>
+                        <td>100-200K</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Ngày 2 -->
+        <section class="day-plan">
+            <h2>Ngày 2 (18/12)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thời Gian</th>
+                        <th>Nội Dung</th>
+                        <th>Địa Chỉ</th>
+                        <th>Chi Phí (VNĐ)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7h00</td>
+                        <td>Ăn sáng bánh căn xíu mại</td>
+                        <td>69 Hoàng Hoa Thám, P10</td>
+                        <td>30-50k</td>
+                    </tr>
+                    <tr>
+                        <td>8h00</td>
+                        <td>Uống cafe check in Cheo Veoo</td>
+                        <td>116 Hùng Vương, P11</td>
+                        <td>50-100K</td>
+                    </tr>
+                    <tr>
+                        <td>9h00</td>
+                        <td>Check in Hồ Tuyền Lâm</td>
+                        <td>Hồ Tuyền Lâm, P4</td>
+                        <td>100K</td>
+                    </tr>
+                    <tr>
+                        <td>12h00</td>
+                        <td>Ăn trưa buffet cơm Thạch Sanh</td>
+                        <td>1C Hoàng Hoa Thám, P10</td>
+                        <td>150K</td>
+                    </tr>
+                    <tr>
+                        <td>14h00</td>
+                        <td>Check in Cỏ lau hồng</td>
+                        <td>Cỏ lau hồng, Xuân Thọ</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>16h00</td>
+                        <td>Check in Trên Đồi Có Mây</td>
+                        <td>Cua Cây Mai, Xuân Thọ</td>
+                        <td>50-100K</td>
+                    </tr>
+                    <tr>
+                        <td>18h30</td>
+                        <td>Ăn tối Túi nướng Lavender</td>
+                        <td>17/6 Nguyễn Trãi, P9</td>
+                        <td>300K-800K</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Ngày 3 -->
+        <section class="day-plan">
+            <h2>Ngày 3 (19/12)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thời Gian</th>
+                        <th>Nội Dung</th>
+                        <th>Địa Chỉ</th>
+                        <th>Chi Phí (VNĐ)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7h00</td>
+                        <td>Ăn sáng phở - bánh canh</td>
+                        <td>8 Mạc Đĩnh Chi, P4</td>
+                        <td>50-100K</td>
+                    </tr>
+                    <tr>
+                        <td>8h00</td>
+                        <td>Uống cafe check in Villa d'Hiver</td>
+                        <td>27 Lê Hồng Phong, P4</td>
+                        <td>50-100K</td>
+                    </tr>
+                    <tr>
+                        <td>10h00</td>
+                        <td>Mua đặc sản Đà Lạt</td>
+                        <td>Chưa Biết 🤡</td>
+                        <td>200-500K</td>
+                    </tr>
+                    <tr>
+                        <td>12h00</td>
+                        <td>Ăn trưa MamaThai</td>
+                        <td>19B Tăng Bạt Hổ</td>
+                        <td>200-400K</td>
+                    </tr>
+                    <tr>
+                        <td>13h00</td>
+                        <td>Lên xe về Đắk Lắk</td>
+                        <td></td>
+                        <td>500K</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Hữu Hiển ❤️ Cao Thu</p>
+    </footer>
 </body>
 </html>
